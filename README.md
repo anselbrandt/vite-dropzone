@@ -1,4 +1,4 @@
-# Vite Tailwind Vanilla JS
+# Vite Tailwind Vanilla JS - Dropzone.js
 
 ```
 # Example for macOS arm64
@@ -13,4 +13,16 @@ pnpm run cssbuilder
 # In second terminal
 
 pnpm run dev
+```
+
+### Mininum HTML
+
+```
+<div class="m-2">
+    <form
+    action="/file-upload"
+    class="dropzone"
+    id="dropzone-container"
+    ></form>
+</div>
 ```
