@@ -1,0 +1,15 @@
+{
+  "name": "vite-dropzone",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --base=/app",
+    "build": "vite build",
+    "preview": "vite preview",
+    "cssbuilder": "./tailwindcss -o src/tailwind.css --watch"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  }
+}
