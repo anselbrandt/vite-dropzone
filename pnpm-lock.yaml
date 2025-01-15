@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      just-extend:
+        specifier: ^6.2.0
+        version: 6.2.0
     devDependencies:
       vite:
         specifier: ^6.0.5
@@ -272,6 +276,9 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
 
+  just-extend@6.2.0:
+    resolution: {integrity: sha512-cYofQu2Xpom82S6qD778jBDpwvvy39s1l/hrYij2u9AMdQcGRpaBu6kY4mVhuno5kJVi1DAz4aiphA2WI1/OAw==}
+
   nanoid@3.3.8:
     resolution: {integrity: sha512-WNLf5Sd8oZxOm+TzppcYk8gVOgP+l58xNy58D0nbUnOxOWRWvlcCV4kUF7ltmI6PsrLl/BgKEyS4mqsGChFN0w==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -499,6 +506,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  just-extend@6.2.0: {}
 
   nanoid@3.3.8: {}
 

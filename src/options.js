@@ -1,5 +1,7 @@
 import Dropzone from "./dropzone";
-import defaultPreviewTemplate from "bundle-text:./preview-template.html";
+import { defaultPreviewTemplate } from './preview-template.js'
+
+
 
 let defaultOptions = {
   /**
@@ -368,7 +370,7 @@ let defaultOptions = {
    * Called when dropzone initialized
    * You can add event listeners here
    */
-  init() {},
+  init() { },
 
   /**
    * Can be an **object** of additional parameters to transfer to the server, **or** a `Function`
@@ -584,7 +586,7 @@ let defaultOptions = {
   drop(e) {
     return this.element.classList.remove("dz-drag-hover");
   },
-  dragstart(e) {},
+  dragstart(e) { },
   dragend(e) {
     return this.element.classList.remove("dz-drag-hover");
   },
@@ -598,7 +600,7 @@ let defaultOptions = {
     return this.element.classList.remove("dz-drag-hover");
   },
 
-  paste(e) {},
+  paste(e) { },
 
   // Called whenever there are no files left in the dropzone anymore, and the
   // dropzone should be displayed as if in the initial state.
@@ -705,7 +707,7 @@ let defaultOptions = {
     }
   },
 
-  errormultiple() {},
+  errormultiple() { },
 
   // Called when a file gets processed. Since there is a cue, not all added
   // files are processed immediately.
@@ -719,7 +721,7 @@ let defaultOptions = {
     }
   },
 
-  processingmultiple() {},
+  processingmultiple() { },
 
   // Called whenever the upload progress gets updated.
   // Receives `file`, `progress` (percentage 0-100) and `bytesSent`.
@@ -738,14 +740,14 @@ let defaultOptions = {
 
   // Called whenever the total upload progress gets updated.
   // Called with totalUploadProgress (0-100), totalBytes and totalBytesSent
-  totaluploadprogress() {},
+  totaluploadprogress() { },
 
   // Called just before the file is sent. Gets the `xhr` object as second
   // parameter, so you can modify it (for example to add a CSRF token) and a
   // `formData` object to add additional information.
-  sending() {},
+  sending() { },
 
-  sendingmultiple() {},
+  sendingmultiple() { },
 
   // When the complete upload is finished and successful
   // Receives `file`
@@ -755,14 +757,14 @@ let defaultOptions = {
     }
   },
 
-  successmultiple() {},
+  successmultiple() { },
 
   // When the upload is canceled.
   canceled(file) {
     return this.emit("error", file, this.options.dictUploadCanceled);
   },
 
-  canceledmultiple() {},
+  canceledmultiple() { },
 
   // When the upload is finished, either with success or an error.
   // Receives `file`
@@ -775,15 +777,15 @@ let defaultOptions = {
     }
   },
 
-  completemultiple() {},
+  completemultiple() { },
 
-  maxfilesexceeded() {},
+  maxfilesexceeded() { },
 
-  maxfilesreached() {},
+  maxfilesreached() { },
 
-  queuecomplete() {},
+  queuecomplete() { },
 
-  addedfiles() {},
+  addedfiles() { },
 };
 
 export default defaultOptions;
